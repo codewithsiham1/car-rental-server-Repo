@@ -128,7 +128,7 @@ app.post("/cars", async (req, res) => {
       }
     });
 
-    // ✅ Delete car
+    // delete car
     app.delete("/cars/:id", async (req, res) => {
       const id = req.params.id;
       try {
