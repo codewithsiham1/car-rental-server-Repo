@@ -101,7 +101,7 @@ app.post("/cars", async (req, res) => {
   }
 });
 
-    // ✅ Get car by ID
+    // get car by id
     app.get('/cars/:id', async (req, res) => {
       const id = req.params.id;
       try {
