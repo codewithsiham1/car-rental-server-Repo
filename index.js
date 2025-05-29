@@ -182,7 +182,9 @@ app.get("/recent-cars", async (req, res) => {
       }
     });
     // auth related apis
-    
+    app.post("/jwt",async(req,res)=>{
+      const user=req.body
+    })
 
   } finally {
     // Not closing the client because we want persistent connection
