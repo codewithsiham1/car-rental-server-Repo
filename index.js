@@ -185,7 +185,8 @@ app.get("/recent-cars", async (req, res) => {
     // auth related apis
     app.post("/jwt",async(req,res)=>{
       const user=req.body;
-      const token=jwt.sign(user,'secret',{expiresIn:'1h'})
+      const token=jwt.sign(user,'secret',{expiresIn:'1h'});
+      res.send(token)
     })
 
   } finally {
