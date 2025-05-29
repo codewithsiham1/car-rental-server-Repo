@@ -181,6 +181,8 @@ app.get("/recent-cars", async (req, res) => {
         res.status(500).send({ error: "Failed to create booking" });
       }
     });
+    // auth related apis
+    
 
   } finally {
     // Not closing the client because we want persistent connection
